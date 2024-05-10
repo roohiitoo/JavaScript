@@ -1,6 +1,10 @@
 /*
 https://tc39.es/ecma262/
 
+https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
 
 
 
@@ -42,4 +46,46 @@ console.log(typeof booleanValue);
 "JayGanesh" = true
  */
 
+//--------------------------------------------------------
 
+//Operations
+console.log(2+1);
+console.log(2-1);
+console.log(2*1);
+console.log(2/1);
+console.log(2%1);
+console.log(2**1);
+console.log(+true);
+console.log(+"");
+
+//some tricky operations
+console.log("3"+ 4 + 5);
+console.log(3 + 4 + "5");
+console.log((3 + 4) * 5);
+
+/* Operator precedence 
+Unary operators
+binary operators
+prefix and postfix operators 
+*/
+
+//--------------------------------------------------------
+
+//Comparision
+
+console.log(21>11);
+console.log(21>=11);
+console.log(21<11);
+console.log(21<=11);
+console.log(21==11);
+console.log(21!=11);
+
+
+//--------------------------------------------------------
+
+/* 
+how data is save and access in memory thats how we differentiate the datatypes. 
+callByValue and callByReference
+primitive data types --> 7 types (String, Number, Boolean, null, undefined, Symbol, BigInt)
+non primitive data types -->3 types  (Array, Objects, Functions)
+*/
