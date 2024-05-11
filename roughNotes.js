@@ -88,4 +88,70 @@ how data is save and access in memory thats how we differentiate the datatypes.
 callByValue and callByReference
 primitive data types --> 7 types (String, Number, Boolean, null, undefined, Symbol, BigInt)
 non primitive data types -->3 types  (Array, Objects, Functions)
+*/ 
+
+//--------------------------------------------------------
+
+/* Memory
+Stack - primitive datatypes - we get copy of data
+Heap - Non primitive datatype - we get reference of data
+
+so whatever variable we declaired is saved in stack memory for example
+let userName = "Ganesha";
+let newUserName = userName ;
+newUserName = "Bappa";
+
+So if you console log both userName and newUserName you will get Ganesha and Bappa respectively because in stack memory we get copy of memory and even if we change the value of newUserName the original value of userName stays as it is.
+
+In Heap memory we get the reference of the moemory for example:
+
+let productSpecification = {
+    price : 21,
+    DOM : "20 March 2024";
+}
+
+let newProductSpecification = productSpecification;
+
+newProductSpecification.DOM = "12 May 2024";
+
+here if we cosole log DOM for both the product we will get the same value as "12 May 2024" because here we get the reference of object stored in memory which is same for both the object and as we changed the value of DOM through newProductSpecification it reflects for productSpecificaton as well.
+
+--------------------------------------------------------
+
+Your explanation about stack and heap memory is generally accurate, but there are some nuances to be aware of.
+
+In JavaScript, primitive data types like strings and numbers are indeed stored in the stack, and when you assign a primitive variable to another, a copy of the value is made. This is why when you modify `newUserName`, `userName` remains unchanged.
+
+```javascript
+let userName = "Ganesha";
+let newUserName = userName;
+newUserName = "Bappa";
+
+console.log(userName);      // Output: Ganesha
+console.log(newUserName);   // Output: Bappa
+```
+
+However, your explanation about objects (which are non-primitive data types) and memory references needs a slight correction. In JavaScript, objects are stored in the heap, but what gets stored in a variable is a reference to the object's location in memory, not the object itself.
+
+So, when you do:
+
+```javascript
+let productSpecification = {
+    price: 21,
+    DOM: "20 March 2024"
+};
+
+let newProductSpecification = productSpecification;
+newProductSpecification.DOM = "12 May 2024";
+
+console.log(productSpecification.DOM);           // Output: 12 May 2024
+console.log(newProductSpecification.DOM);        // Output: 12 May 2024
+```
+
+Both `productSpecification` and `newProductSpecification` are referencing the same object in memory. So, when you modify `DOM` through `newProductSpecification`, it reflects in `productSpecification` as well, because they are pointing to the same memory location.
+
+If you want `newProductSpecification` to be a separate copy of `productSpecification`, you need to perform a deep copy, which means copying the entire object and its properties, not just the reference. There are various ways to achieve this in JavaScript, such as using libraries like `lodash` or writing custom functions.
+
+
+
 */
