@@ -155,3 +155,8 @@ If you want `newProductSpecification` to be a separate copy of `productSpecifica
 
 
 */
+
+/* 
+Today I took off 
+revise privious concepts
+*/
