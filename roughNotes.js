@@ -3,6 +3,16 @@ https://tc39.es/ecma262/
 
 https://262.ecma-international.org/5.1/#sec-11.4.3
 
+https://theheadstarter.com/
+
+https://cursor.sh/
+
+https://www.lightgalleryjs.com/jquery-to-js-converter/
+
+https://quickref.me/
+
+https://www.logome.ai/
+
 
 
 
