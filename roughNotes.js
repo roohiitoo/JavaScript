@@ -16,15 +16,15 @@ https://www.logome.ai/
 
 
 
-*/ 
+*/
 //--------------------------------------------------------
 //Conversion of DataTypes
 
-// Suppose we are getting temparature value from backend but we don't know if the value is number type or string or anyother datatype. Sometimes we are unable to fetch value so it might possible that on UI will show 0 which actually wrong in this scenario. 
+// Suppose we are getting temparature value from backend but we don't know if the value is number type or string or anyother datatype. Sometimes we are unable to fetch value so it might possible that on UI will show 0 which actually wrong in this scenario.
 let temperature = "21";
 temperature = undefined;
 
-let valueInNumber = Number (temperature); 
+let valueInNumber = Number(temperature);
 console.log(valueInNumber);
 console.log(typeof valueInNumber);
 /* 
@@ -54,17 +54,17 @@ console.log(typeof booleanValue);
 //--------------------------------------------------------
 
 //Operations
-console.log(2+1);
-console.log(2-1);
-console.log(2*1);
-console.log(2/1);
-console.log(2%1);
-console.log(2**1);
+console.log(2 + 1);
+console.log(2 - 1);
+console.log(2 * 1);
+console.log(2 / 1);
+console.log(2 % 1);
+console.log(2 ** 1);
 console.log(+true);
 console.log(+"");
 
 //some tricky operations
-console.log("3"+ 4 + 5);
+console.log("3" + 4 + 5);
 console.log(3 + 4 + "5");
 console.log((3 + 4) * 5);
 
@@ -78,13 +78,12 @@ prefix and postfix operators
 
 //Comparision
 
-console.log(21>11);
-console.log(21>=11);
-console.log(21<11);
-console.log(21<=11);
-console.log(21==11);
-console.log(21!=11);
-
+console.log(21 > 11);
+console.log(21 >= 11);
+console.log(21 < 11);
+console.log(21 <= 11);
+console.log(21 == 11);
+console.log(21 != 11);
 
 //--------------------------------------------------------
 
@@ -93,7 +92,7 @@ how data is save and access in memory thats how we differentiate the datatypes.
 callByValue and callByReference
 primitive data types --> 7 types (String, Number, Boolean, null, undefined, Symbol, BigInt)
 non primitive data types -->3 types  (Array, Objects, Functions)
-*/ 
+*/
 
 //--------------------------------------------------------
 
@@ -171,6 +170,7 @@ Home layout
 
 70+ JavaScript Challenges: Data Structures & Algorithms
 17/5
+DSA day 1
 DSA day 2
 DSA day 3
 
