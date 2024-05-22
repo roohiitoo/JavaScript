@@ -1,5 +1,7 @@
 /*
-Alt+Z = toggle word wrap
+Alt + Z = toggle word wrap
+
+Ctrl + B = Minimize the sidebar
 
 Ctrl + Shift + P = VS Code explore
 
