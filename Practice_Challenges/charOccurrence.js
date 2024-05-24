@@ -20,10 +20,20 @@ function charOccurrences(str, char) {
 
 console.log(charOccurrences("jayGaneshAAA", "a")); //5
 
-function charOccurrences(str, char) {
+//---------------------------------------------------------------------
+
+function charOccurrences0(str, char) {
   const regex = new RegExp(char, "gi");
   const matches = str.match(regex);
   return matches ? matches.length : 0;
 }
 
-console.log(charOccurrences("jayGanesh", "a")); // Output: 5
+console.log(charOccurrences0("jayGanesh", "a")); // Output: 5
+
+//---------------------------------------------------------------------
+
+function charOccurrences1(str, char) {
+  console.log(str.toLowerCase().split(char.toLowerCase()).length - 1);
+}
+
+console.log(charOccurrences1("jayGanesh", "A")); // Output: 5
