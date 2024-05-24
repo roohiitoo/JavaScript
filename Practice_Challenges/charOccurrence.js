@@ -37,3 +37,5 @@ function charOccurrences1(str, char) {
 }
 
 console.log(charOccurrences1("jayGanesh", "A")); // Output: 5
+
+//const charOccurrences3 = (str, char) => console.log(str.toLowerCase().split(char.toLowerCase()).length-1);
