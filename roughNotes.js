@@ -276,6 +276,8 @@ DSA day 102
 DSA day 103
 DSA day 104
 DSA day 105
+DSA day 106
+
 
 
 
@@ -290,3 +292,5 @@ then click on commit --> Yes
 then click on sync --> ok 
 done
 */
+
+console.log();
